@@ -26,3 +26,4 @@ resource "aws_instance" "web" {
     private_key =file("keypair1.pem")
     host     = self.public_ip
   }
+ }
