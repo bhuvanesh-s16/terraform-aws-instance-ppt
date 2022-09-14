@@ -17,7 +17,7 @@ resource "aws_instance" "web" {
   depends_on = [
     module.vpc-ppt
   ]
-}
+
  provisioner "remote-exec" {
     script = "script.sh"
     connection {
@@ -27,3 +27,4 @@ resource "aws_instance" "web" {
     host     = self.public_ip
   }
  }
+}
