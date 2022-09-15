@@ -17,14 +17,4 @@ resource "aws_instance" "web" {
   depends_on = [
     module.vpc-ppt
   ]
-
- provisioner "remote-exec" {
-    script = "script.sh"
-    connection {
-    type     = "ssh"
-    user     = "ubuntu"
-    private_key = file("keypair1.pem")
-    host     = self.public_ip
-  }
  }
-}
