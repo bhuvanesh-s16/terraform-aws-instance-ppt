@@ -1,11 +1,11 @@
-module "vpc-ppt" {
-  source  = "app.terraform.io/infy--tfpractice/vpc-ppt/aws"
-  version = "1.0.0"
+#module "vpc-ppt" {
+ # source  = "app.terraform.io/infy--tfpractice/vpc-ppt/aws"
+ # version = "1.0.0"
   # insert required variables here
-  vpc_cidr = var.vpc_cidr
-  subnet_cidr = var.subnet_cidr
-  available_zone = var.available_zone
-}
+  #vpc_cidr = var.vpc_cidr
+  #subnet_cidr = var.subnet_cidr
+  #available_zone = var.available_zone
+#}
 
 resource "aws_instance" "web" {
   ami               = var.ami
