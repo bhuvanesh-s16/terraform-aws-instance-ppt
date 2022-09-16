@@ -1,5 +1,5 @@
 module "vpc-ppt" {
-   source  = "app.terraform.io/infy--tfpractice/vpc-ppt/aws"
+  source  = "app.terraform.io/infy--tfpractice/vpc-ppt/aws"
   version = "1.0.0"
   # insert required variables here
   vpc_cidr = var.vpc_cidr
